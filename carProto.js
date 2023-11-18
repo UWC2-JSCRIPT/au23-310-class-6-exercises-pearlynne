@@ -13,14 +13,14 @@ class Car {
 	}
 
 	accelerate() {
-		this.currentSpeed += 1;
+		this.currentSpeed++;
 	}
 	brake() {
-		this.currentSpeed -= 1;
+		this.currentSpeed--;
 	}
 
 	toString() {
-		return `${this.model} has a current speed of ${this.currentSpeed}mph.`
+		return `${this.model} has a current speed of ${this.currentSpeed}mph.`;
 	}
 }
 const qashQai = new Car("Qashqai");
