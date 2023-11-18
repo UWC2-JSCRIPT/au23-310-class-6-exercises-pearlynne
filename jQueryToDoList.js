@@ -5,10 +5,11 @@ $(document).ready(function () {
 	// Create callback function to toggle class
 	function listToggleClass() {
 		let $this = $(this);
+		//if ($this[0].nodeName == 'LI")
 		$this.toggleClass("done");
 	};
 
-	// Execute callback function for list items
+	// Execute callback function for <li> elements
 	$("li").on("click", listToggleClass);
 
 
@@ -21,13 +22,13 @@ $(document).ready(function () {
 	function deleteItems(e) {
 		let $this = $(this);
 		// Add fade out [does not remove]
-		$this.parent().fadeOut("normal", function () {
+		$this.parent().fadeOut("slow", function () {
 			$this.parent().remove();
 		})
 		e.stopPropagation();
 	};
 
-	// Execute callback function for delete
+	// Execute callback function for delete link
 	$delete.on("click", deleteItems);
 
 
