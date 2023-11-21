@@ -31,7 +31,7 @@ $(document).ready(function () {
 	// Create a listener on the "Buy Now!" link that responds to a click event.
 	// When clicked, the the "Buy Now!" link should be removed
 	// and replaced with text that says "Added to cart"
-	$newA.on('click', function (e) {
+	$newA.on('click', function () {
 		$(this).text("Added to cart");
 	});
 });

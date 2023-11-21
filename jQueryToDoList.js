@@ -50,7 +50,8 @@ $(document).ready(function () {
 
 		//Append item to current list
 		$("ul").append($newListItem);
-
+		
+		// Add event listeners for toggleClass and delete
 		$newListItem.on("click", listToggleClass);
 		$newDel.on("click", deleteItems);
 
